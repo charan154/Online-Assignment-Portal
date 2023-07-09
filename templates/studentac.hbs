@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <style>
+        .out{
+        
+background-image: url(images/bg2.jpg);
+height: 100%;
+width: 100vw;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+      }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="out">
+            <a href="/index" class="home" id="home"><img src="images/home.png" alt="home" class="home"></a>
+            <form action="/assignmentportal" method="post">
+            <a href="/download" class="view" id="view Assignment">View Assignment</a>
+            <a href="/assignment" class="upload">Submit Assignment</a>
+            <a href="/marksview" class="marksview">View Marks</a>
+
+
+            <ul>
+      {{#each files}}
+      <li>
+        <a href="/downloads/{{this._id}}">{{this.stitle}} </a>
+      </li>
+      {{/each}}
+    </ul>
+
+        
+            </form>
+        </div>
+    </center>
+    
+</body>
+</html>

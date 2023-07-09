@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+<style>
+        .out{
+        
+background-image: url(images/bg2.jpg);
+height: 100%;
+width: 100vw;
+background-repeat: no-repeat;
+position: absolute;
+      }
+      h1{
+        color: red;
+      }
+      
+    </style>
+
+</head>
+<body>
+  <div class="out">
+    <a href="/index" class="home" id="home"><img src="images/home.png" alt="home" class="home"></a>
+    <form action="/assignment" method="post" enctype="multipart/form-data" name="student">
+    <center>
+      <h1>Assignment Submission Form</h1>
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="name">Roll Number :</label>
+      <input type="text" id="rollnumber" name="srollnumber" required><br><br>
+      <label for="title">Assignment Title :</label>
+      <input type="text" id="title" name="stitle" required><br><br>
+      <label for="file">Assignment File :</label>
+      <input type="file" id="file" name="sfile" required><br><br>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>
+    </center>
+      
+      
+    </form>
+  </div>
+  
+</body>
+</html>

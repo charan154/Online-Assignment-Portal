@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <style>
+        .out{
+        
+background-image: url(images/bg2.jpg);
+height: 100%;
+width: 100vw;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+      }
+      h1{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="out">
+          <h1>Add New Assignment : </h1>
+          <a href="/index" class="home" id="home"><img src="images/home.png" alt="home" class="home"></a>
+        <form method="post" action="/upload" enctype="multipart/form-data">
+        <br>
+        <label for="title">Assignment Title :</label>
+      <input type="text" id="title" name="aname" required><br><br>
+      <label for="file">Assignment File :</label>
+      <input type="file" id="file" name="file" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    </div>
+    </center>
+    
+    
+</body>
+</html>

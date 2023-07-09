@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+
+    <style>
+        th{
+            width: 200px;
+            color: red;
+        }
+        td{
+            text-align: center;
+            
+        }
+        .out{
+        
+background-image: url(images/bg2.jpg);
+height: 100%;
+width: 100vw;
+background-size: cover;
+background-repeat: no-repeat;
+position: absolute;
+      }
+      .vaccum{
+        background-color: aliceblue;
+      }
+      .body{
+        display: flex;
+      }
+    </style>
+
+</head>
+<body>
+    <br><br>
+      <center>
+        <form action="/marksview" method="post" class="out">
+        <a href="/index" class="home" id="home"><img src="images/home.png" alt="home" class="home"></a>
+    <input type="text" name="rollnumber" placeholder="Enter RollNumber">
+    <input type="submit" value="view marks">
+    <br><br><br><br>
+        <table border="10" class="vaccum">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each assignments}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.marks}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+    </form>
+    </center>
+    
+    
+</body>
+</html>
